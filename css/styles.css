@@ -52,6 +52,11 @@ body {
     line-height: 1.5;
 }
 
+.container {
+    width: px;
+    margin: 0 auto;
+}
+
 .list {
     list-style: none;
 }
