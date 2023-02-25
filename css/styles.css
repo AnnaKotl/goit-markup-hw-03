@@ -10,7 +10,7 @@
     --succes-color: #31D0AA;
     --text-color: #434455;
     --subtle-text-color: #8E8F99;
-
+    /* CORNFLOWER */
     --accent-color: #E7E9FC;
 
     /* CLOUD */
@@ -53,8 +53,10 @@ body {
 }
 
 .container {
-    width: px;
+    width: 1158px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .list {
@@ -66,6 +68,11 @@ body {
 }
 
 /* Menu Nav */
+
+.navigation-header {
+    padding: 24px 0;
+    border-bottom: 1px solid #E7E9FC;
+}
 
 .navigation-logo {
     color: var(--hero-background-color);
@@ -116,6 +123,9 @@ body {
     font-size: 56px;
     line-height: 1.07;
     color: var(--white-color);
+
+    max-width: 496px;
+    margin-bottom: 48px;
 } 
 
 .hero-btn {
@@ -134,6 +144,10 @@ body {
 }
 
 /* Section Specialty */
+
+.specialty-section {
+    padding: 120px 0;
+}
 
 .visually-hidden {
     position: absolute;
@@ -155,11 +169,27 @@ body {
     color: var(--hero-background-color);
 }
 
+.specialty-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.specialty-subtitle {
+    margin-bottom: 8px;
+}
+
 .text {
     font-size: 16px;
 }
 
 /* Section Features */
+
+.features-section {
+    padding-bottom: 120px;
+}
+
+.features-title {
+    margin-bottom: 72px;
+}
 
 .title {
     font-weight: 700;
@@ -168,20 +198,44 @@ body {
     color: var(--hero-background-color);
 }
 
+.features-item:not(:last-child) {
+    margin-right: 24px;
+}
+
 /* Section Team */
 
 .team-section {
     background-color: var(--light-color);
+
+    padding: 120px 0;
+}
+
+.team-title {
+    margin-bottom: 72px;
 }
 
 .team-item {
     background-color: var(--white-color)
 }
 
+.team-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.team-subtitle {
+    margin: 32px 0 8px 0;
+}
+
+.team-text {
+    padding-bottom: 32px;
+}
 /* Footer */
 
 .footer {
     background-color: var(--hero-background-color);
+
+    padding: 100px 0;
+    margin-bottom: 16px;
 }
 
 .footer-logo {
@@ -200,6 +254,8 @@ body {
 .footer-text {
     font-size: 16px;
     color: var(--accent-color);
+
+    max-width: 264px;
 }
 
 /* PORTFOLIO.HTML */
