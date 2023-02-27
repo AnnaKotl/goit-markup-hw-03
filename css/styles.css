@@ -45,6 +45,8 @@ img {
 }
 button {
     border: none;
+    margin: 0;
+    padding: 0;
 }
 body {
     background-color: var(--white-color);
@@ -90,7 +92,7 @@ body {
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.03em;
-    margin-right: 76px;
+    margin-right: auto;
 }
 .logo-nav {
     color: var(--primary-brand-color);
@@ -98,6 +100,7 @@ body {
 .navigation-items {
     display: flex;
     gap: 40px;
+    margin-left: 76px;
 }
 .nav-link {
     color: var(--hero-background-color);
@@ -111,10 +114,13 @@ body {
 
 /* Contacts */
 
+.contacts {
+ margin-left: auto;
+}
 .contacts-items {
     display: flex;
     gap: 40px;
-    margin-left: 332px; /* ? */
+    
 }
 .contacts-item {
     font-style: normal;
@@ -128,15 +134,14 @@ body {
 }
 
 /* Hero */ 
-/* ? */
 .hero-section {
     background-color: var(--hero-background-color);
-    padding: 188px 0;
+    padding: 188px 0 188px 0;
 }
 .container-hero {
     max-width: 496px;
+    align-items: center;
     text-align: center;
-    margin: 0 auto;
 }
 .hero-title {
     font-weight: 700;
@@ -144,6 +149,7 @@ body {
     line-height: 1.07;
     color: var(--white-color);
     margin-bottom: 48px;
+    min-width: 496px;
 } 
 .hero-btn {
     font-family: var(--primari-font);
@@ -195,7 +201,6 @@ body {
 }
 
 /* Section Features */
-/* ? */
 .features-section {
     padding-bottom: 120px;
 }
@@ -220,9 +225,9 @@ body {
 } 
 
 /* Section Team */
-/* ? */
 .team-section {
     background-color: var(--light-color);
+    padding-bottom: 120px;
 }
 .team-title {
     margin-bottom: 72px;
@@ -241,6 +246,8 @@ body {
 .container-subtitle {
     padding: 32px 16px;
     text-align: center;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 /* Footer */
@@ -278,6 +285,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 24px;
+    margin-bottom: 72px;
 }
 .features-item {
     width: calc((100% - 96px) / 5);
@@ -305,7 +313,7 @@ body {
 .catalog-items {
     display: flex;
     align-items: center;
-    padding: 72px 0 120px 0;
+    padding-bottom: 120px;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
@@ -315,6 +323,9 @@ body {
 }
 .catalog-group {
     padding: 32px 0 32px 16px;
+    border-right: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
 }
 .catalog-subtitle {
     margin-bottom: 8px;
