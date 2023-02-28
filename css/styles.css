@@ -280,6 +280,7 @@ body {
 
 .finger {
     padding-top: 96px;
+    padding-bottom: 72px;
 }
 .finger-items {
     display: flex;
@@ -313,7 +314,6 @@ body {
 .catalog-items {
     display: flex;
     align-items: center;
-    padding-bottom: 120px;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
